@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>M. Raja Siyo — Portofolio</title>
+<meta name="description" content="Portofolio M. Raja Siyo. Pelajar XII RPL 1, pencinta alam, dunia gym, dan web developer.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Spline+Sans+Mono:wght@400;600&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body data-mode="night">
+
+<a class="skip" href="#about">
+  Lompat ke isi
+</a>
+
+
+<!-- ====================== LOADING SCREEN ====================== -->
+
+<div class="loading-screen" id="loadingScreen">
+
+  <div class="loading-content">
+
+    <div class="loading-text">
+      M.RAJA SIYO
+    </div>
+
+    <div class="loading-bar">
+      <div
+        class="loading-progress"
+        id="loadingProgress">
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- ====================== NAVBAR ====================== -->
+
+<header class="nav" id="nav">
+
+  <nav
+    class="nav-links"
+    aria-label="Navigasi utama">
+
+    <a
+      href="#home"
+      class="is-here">
+      Home
+    </a>
+
+    <a href="#about">
+      About me
+    </a>
+
+    <a href="#project">
+      Project
+    </a>
+
+    <a href="#contact">
+      Contact Me
+    </a>
+
+  </nav>
+
+
+  <span
+    class="nav-split"
+    aria-hidden="true">
+  </span>
+
+
+  <button
+    class="mode-btn"
+    id="modeBtn"
+    type="button"
+    aria-pressed="true">
+
+    <span
+      class="mode-ico"
+      aria-hidden="true">
+    </span>
+
+    <span class="mode-label">
+      Malam
+    </span>
+
+  </button>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================================================
+     INTRO
+     ========================================================= -->
+
+<section
+  class="intro"
+  id="home">
+
+
+  <div
+    class="intro-marquee"
+    aria-hidden="true">
+
+    <div
+      class="track"
+      id="marqueeTrack">
+
+
+      <span class="group">
+
+        <b>M. RAJA SIYO</b>
+        <b>M. RAJA SIYO</b>
+        <b>M. RAJA SIYO</b>
+
+      </span>
+
+
+      <span class="group">
+
+        <b>M. RAJA SIYO</b>
+        <b>M. RAJA SIYO</b>
+        <b>M. RAJA SIYO</b>
+
+      </span>
+
+    </div>
+
+  </div>
+
+
+
+  <div
+    class="intro-photo-container"
+    id="introPhotoContainer">
+
+    <div
+      class="intro-photo"
+      id="introPhoto">
+
+      <span
+        class="intro-ground"
+        aria-hidden="true">
+      </span>
+
+
+      <img
+        src="img/me-cutout.png"
+        alt="Foto M. Raja Siyo"
+        id="photoImg">
+
+    </div>
+
+  </div>
+
+
+
+  <p
+    class="intro-roles"
+    id="introRoles">
+
+    <span>
+      Pelajar XII RPL 1
+    </span>
+
+    <span>
+      Pencinta alam
+    </span>
+
+    <span>
+      Dunia gym
+    </span>
+
+    <span>
+      Web developer
+    </span>
+
+  </p>
+
+
+
+  <span class="intro-credit">
+    M. Raja Siyo &mdash; Portofolio
+  </span>
+
+
+
+  <div
+    class="intro-cue"
+    id="introCue">
+
+    <span>
+      Scroll
+    </span>
+
+    <i aria-hidden="true"></i>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     SCROLL SPACE
+     ========================================================= -->
+
+<div class="scroll-space">
+
+
+<section
+  class="stage"
+  aria-label="Adegan gunung meletus">
+
+
+  <div
+    class="world"
+    id="world">
+
+
+    <div
+      class="layer sky"
+      data-depth="-1">
+    </div>
+
+
+    <div
+      class="layer sun"
+      data-depth="-0.95"
+      aria-hidden="true">
+    </div>
+
+
+    <img
+      src="img/stars.svg"
+      class="layer stars"
+      data-depth="-0.92"
+      alt=""
+      aria-hidden="true">
+
+
+    <img
+      src="img/ridge-far.svg"
+      class="layer far"
+      data-depth="-0.62"
+      alt=""
+      aria-hidden="true">
+
+
+    <img
+      src="img/ridge-mid.svg"
+      class="layer mid"
+      data-depth="-0.34"
+      alt=""
+      aria-hidden="true">
+
+
+    <img
+      src="img/smoke.svg"
+      class="layer smoke"
+      data-depth="-0.12"
+      alt=""
+      aria-hidden="true">
+
+
+    <img
+      src="img/volcano.svg"
+      class="layer cone"
+      data-depth="0"
+      alt="Gunung api dengan kawah menyala"
+      aria-hidden="true">
+
+
+    <img
+      src="img/lava.svg"
+      class="layer lava"
+      data-depth="0.08"
+      alt=""
+      aria-hidden="true">
+
+
+    <canvas
+      class="layer embers"
+      id="embers"
+      data-depth="0.2"
+      aria-hidden="true">
+    </canvas>
+
+
+    <img
+      src="img/mist.svg"
+      class="layer mist"
+      data-depth="0.34"
+      alt=""
+      aria-hidden="true">
+
+
+    <img
+      src="img/birds.svg"
+      class="layer birds"
+      data-depth="0.44"
+      alt=""
+      aria-hidden="true">
+
+
+    <img
+      src="img/foreground.svg"
+      class="layer fore"
+      data-depth="0.72"
+      alt=""
+      aria-hidden="true">
+
+
+    <div
+      class="flash"
+      id="flash"
+      aria-hidden="true">
+    </div>
+
+
+    <div
+      class="grain"
+      aria-hidden="true">
+    </div>
+
+  </div>
+
+
+
+  <p
+    class="hero-meta"
+    id="heroCopy">
+
+    Sibayak 2.212 mdpl
+    &middot;
+    suhu kawah 90&deg;C
+
+  </p>
+
+
+
+  <!-- ================= BET NAMA ================= -->
+
+  <div
+    class="badge-wrap"
+    id="badge">
+
+
+    <svg
+      class="lanyard"
+      id="lanyard"
+      viewBox="0 0 240 480"
+      preserveAspectRatio="none"
+      aria-hidden="true">
+
+      <defs>
+
+        <linearGradient
+          id="strapA"
+          x1="0"
+          y1="0"
+          x2="1"
+          y2="0">
+
+          <stop
+            offset="0"
+            stop-color="#13301F">
+
+          <stop
+            offset=".18"
+            stop-color="#2E6B4F">
+
+          <stop
+            offset=".5"
+            stop-color="#3C8360">
+
+          <stop
+            offset=".82"
+            stop-color="#245240">
+
+          <stop
+            offset="1"
+            stop-color="#0F261B">
+
+        </linearGradient>
+
+      </defs>
+
+
+      <rect
+        x="104"
+        y="0"
+        width="32"
+        height="450"
+        fill="url(#strapA)">
+
+
+      <line
+        x1="108"
+        y1="0"
+        x2="108"
+        y2="450"
+        stroke="#8FE0B4"
+        stroke-width="1"
+        opacity=".28"
+        stroke-dasharray="7 8">
+      </line>
+
+
+      <line
+        x1="132"
+        y1="0"
+        x2="132"
+        y2="450"
+        stroke="#8FE0B4"
+        stroke-width="1"
+        opacity=".28"
+        stroke-dasharray="7 8">
+      </line>
+
+
+      <rect
+        x="104"
+        y="0"
+        width="6"
+        height="450"
+        fill="#000"
+        opacity=".18">
+
+
+      <rect
+        x="130"
+        y="0"
+        width="6"
+        height="450"
+        fill="#000"
+        opacity=".22">
+
+    </svg>
+
+
+
+    <div
+      class="strap-print"
+      aria-hidden="true">
+
+      <span>
+        SMK MANDIRI
+      </span>
+
+      <span>
+        RAJA SIYO
+      </span>
+
+      <span>
+        SMK MANDIRI
+      </span>
+
+      <span>
+        RAJA SIYO
+      </span>
+
+    </div>
+
+
+
+    <svg
+      class="clip"
+      viewBox="0 0 60 46"
+      aria-hidden="true">
+
+      <defs>
+
+        <linearGradient
+          id="metal"
+          x1="0"
+          y1="0"
+          x2="1"
+          y2="1">
+
+          <stop
+            offset="0"
+            stop-color="#F2F5F6">
+
+          <stop
+            offset=".35"
+            stop-color="#96A2A7">
+
+          <stop
+            offset=".55"
+            stop-color="#E6EBED">
+
+          <stop
+            offset="1"
+            stop-color="#78848A">
+
+        </linearGradient>
+
+      </defs>
+
+
+      <rect
+        x="12"
+        y="0"
+        width="36"
+        height="12"
+        rx="4"
+        fill="url(#metal)">
+      </rect>
+
+
+      <rect
+        x="19"
+        y="9"
+        width="22"
+        height="26"
+        rx="4"
+        fill="url(#metal)">
+      </rect>
+
+
+      <rect
+        x="25"
+        y="15"
+        width="10"
+        height="16"
+        rx="3"
+        fill="#0A1116"
+        opacity=".5">
+      </rect>
+
+    </svg>
+
+
+
+    <div
+      class="badge-card"
+      id="badgeCard">
+
+
+      <div class="face front">
+
+        <span
+          class="punch"
+          aria-hidden="true">
+        </span>
+
+
+        <header class="id-head">
+
+          <span class="id-school">
+            SMK Mandiri
+          </span>
+
+          <span class="id-dept">
+            Computer Engineering
+          </span>
+
+        </header>
+
+
+        <div class="id-photo">
+
+          <b aria-hidden="true">
+            RS
+          </b>
+
+
+          <img
+            id="foto"
+            src="img/foto.jpg"
+            alt="Foto M. Raja Siyo"
+            onerror="this.classList.add('gagal')">
+
+        </div>
+
+
+        <div class="id-body">
+
+          <p class="id-name">
+            M. Raja Siyo
+          </p>
+
+          <p class="id-class">
+            Pelajar XII RPL 1
+          </p>
+
+          <p class="id-tags">
+            Pencinta alam
+            &middot;
+            Gym
+            &middot;
+            Web
+          </p>
+
+        </div>
+
+
+        <footer class="id-foot">
+
+          <span
+            class="barcode"
+            aria-hidden="true">
+          </span>
+
+          <span class="id-no">
+            No. 007
+          </span>
+
+        </footer>
+
+      </div>
+
+
+
+      <div
+        class="face back"
+        aria-hidden="true">
+
+        <span class="back-mark">
+          RS
+        </span>
+
+        <p class="back-line">
+          Kalau ketemu kartu ini di jalur pendakian,
+        </p>
+
+        <p class="back-line strong">
+          tolong balikin ke pemiliknya.
+        </p>
+
+        <p class="back-small">
+          SMK Mandiri
+          &mdash;
+          Computer Engineering
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <p
+    class="badge-tip"
+    id="badgeTip">
+
+    Tarik bet namanya, lalu lepas
+
+  </p>
+
+
+
+  <ol
+    class="rail"
+    id="rail"
+    aria-hidden="true">
+
+    <li>
+      <i></i>
+      <span>tenang</span>
+    </li>
+
+    <li>
+      <i></i>
+      <span>meletus</span>
+    </li>
+
+    <li>
+      <i></i>
+      <span>abu reda</span>
+    </li>
+
+    <li>
+      <i></i>
+      <span>bet nama</span>
+    </li>
+
+  </ol>
+
+
+
+  <div
+    class="cue"
+    id="cue">
+
+    <span>
+      Scroll
+    </span>
+
+    <i aria-hidden="true"></i>
+
+  </div>
+
+</section>
+
+</div>
+
+
+
+<!-- =========================================================
+     ABOUT ME
+     ========================================================= -->
+
+<section
+  class="about"
+  id="about">
+
+
+  <div class="about-intro">
+
+
+    <!-- ================= FOTO ================= -->
+
+    <div
+      class="about-photo"
+      id="aboutPhotos">
+
+
+      <div
+        class="about-photo-card photo-one">
+
+        <img
+          src="img/about-1.jpg"
+          alt="M. Raja Siyo">
+
+        <div class="photo-label">
+
+          <span>
+            01
+          </span>
+
+          <strong>
+            Pencinta Alam
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <div
+        class="about-photo-card photo-two">
+
+        <img
+          src="img/about-2.jpg"
+          alt="M. Raja Siyo">
+
+        <div class="photo-label">
+
+          <span>
+            02
+          </span>
+
+          <strong>
+            Gym
+          </strong>
+
+        </div>
+
+      </div>
+
+
+
+      <div
+        class="about-photo-card photo-three">
+
+        <img
+          src="img/about-3.jpg"
+          alt="M. Raja Siyo">
+
+        <div class="photo-label">
+
+          <span>
+            03
+          </span>
+
+          <strong>
+            Web Development
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <p class="photo-hint">
+        Klik foto untuk melihat berikutnya
+      </p>
+
+    </div>
+
+
+
+    <!-- ================= TEXT ABOUT ================= -->
+
+    <div class="about-content">
+
+
+      <p class="about-kicker">
+        ABOUT ME
+      </p>
+
+
+      <!-- JUDUL UTAMA -->
+
+      <h2 class="about-title">
+
+        Kenalin,<br>
+
+        saya <span>
+          Raja.
+        </span>
+
+      </h2>
+
+
+      <!-- =================================================
+           TAMBAHAN BARU:
+           TIGA HAL YANG SAYA SUKA
+           ================================================= -->
+
+      <h3 class="about-three-title">
+
+        Tiga hal yang<br>
+        saya suka<span>.</span>
+
+      </h3>
+
+
+
+      <div class="about-description">
+
+
+        <p>
+
+          Saya
+          <strong>
+            M. Raja Siyo
+          </strong>,
+
+          seorang pelajar kelas
+          <strong>
+            XII RPL 1
+          </strong>
+
+          di sekolah swasta
+          <strong>
+            SMK Mandiri
+          </strong>.
+
+        </p>
+
+
+
+        <p>
+
+          Saya punya tiga hal yang paling sering saya jalani:
+
+          <strong>
+            pencinta alam, gym, dan web development.
+          </strong>
+
+          Dari alam saya belajar tentang daya tahan
+          dan tidak gampang menyerah.
+
+          Dari gym saya belajar tentang kekuatan
+          dan konsistensi.
+
+        </p>
+
+
+
+        <p>
+
+          Sedangkan dari web development saya belajar
+          bagaimana membuat sesuatu dari nol,
+
+          mulai dari tampilan sampai sistem
+          yang bisa digunakan.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- INFO -->
+
+      <div class="about-info">
+
+
+        <div class="about-info-item">
+
+          <span>
+            STATUS
+          </span>
+
+          <strong>
+            Pelajar XII RPL 1
+          </strong>
+
+        </div>
+
+
+        <div class="about-info-item">
+
+          <span>
+            SEKOLAH
+          </span>
+
+          <strong>
+            SMK Mandiri
+          </strong>
+
+        </div>
+
+
+        <div class="about-info-item">
+
+          <span>
+            MINAT
+          </span>
+
+          <strong>
+            Pencinta Alam · Gym · Web
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- =====================================================
+       MY SKILLS
+       ===================================================== -->
+
+ 
+  <!-- =====================================================
+     TIGA HAL YANG SAYA SUKA
+     ===================================================== -->
+
+<div class="about-favorites">
+
+  <!-- HEADER -->
+
+  <div class="favorites-heading">
+
+    <div>
+
+      <p class="about-kicker">
+        ABOUT ME
+      </p>
+
+      <h3>
+        Tiga hal yang<br>
+        saya suka<span>.</span>
+      </h3>
+
+    </div>
+
+    <p class="favorites-intro">
+      Hal-hal yang paling sering mengisi waktu
+      dan terus saya kembangkan. Dari setiap
+      prosesnya, saya belajar tentang konsistensi,
+      disiplin, dan bagaimana menjadi versi diri
+      yang lebih baik.
+    </p>
+
+  </div>
+
+
+  <!-- ================= 01 — PENCINTA ALAM ================= -->
+
+  <article class="favorite-row favorite-row-left">
+
+    <div class="favorite-image">
+
+      <img
+        src="img/about-01.jpg"
+        alt="M. Raja Siyo sedang menikmati alam">
+
+      <span class="favorite-image-number">
+        01
+      </span>
+
+    </div>
+
+
+    <div class="favorite-content">
+
+      <div class="favorite-meta">
+
+        <span class="favorite-line"></span>
+
+        <span>01</span>
+
+        <span>/</span>
+
+        <span>PENCINTA ALAM</span>
+
+      </div>
+
+
+      <p>
+        Suka menjelajah alam, mendaki, dan
+        melakukan perjalanan jauh. Dari setiap
+        perjalanan saya belajar untuk tetap
+        berjalan, menghargai proses, dan tidak
+        mudah menyerah.
+      </p>
+
+
+      <div class="favorite-tags">
+
+        <span>Hiking</span>
+        <span>Outdoor</span>
+        <span>Adventure</span>
+        <span>Survival</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="favorite-big-number">
+      01
+    </div>
+
+  </article>
+
+
+
+  <!-- ================= 02 — GYM ================= -->
+
+  <article class="favorite-row favorite-row-right">
+
+    <div class="favorite-big-number">
+      02
+    </div>
+
+
+    <div class="favorite-content">
+
+      <div class="favorite-meta">
+
+        <span class="favorite-line"></span>
+
+        <span>02</span>
+
+        <span>/</span>
+
+        <span>GYM</span>
+
+      </div>
+
+
+      <p>
+        Suka latihan beban dan terus meningkatkan
+        kekuatan. Salah satu latihan yang saya
+        lakukan adalah rowing dengan beban
+        <strong>20 kg</strong>.
+
+        Gym mengajarkan saya tentang disiplin,
+        konsistensi, dan mental yang kuat.
+      </p>
+
+
+      <div class="favorite-tags">
+
+        <span>Weight Training</span>
+        <span>Strength</span>
+        <span>Discipline</span>
+        <span>Healthy</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="favorite-image">
+
+      <img
+        src="img/about-02.jpg"
+        alt="M. Raja Siyo sedang latihan gym">
+
+      <span class="favorite-image-number">
+        02
+      </span>
+
+    </div>
+
+  </article>
+
+
+
+  <!-- ================= 03 — WEB DEVELOPMENT ================= -->
+
+  <article class="favorite-row favorite-row-left">
+
+    <div class="favorite-image">
+
+      <img
+        src="img/about-03.jpg"
+        alt="M. Raja Siyo sedang membuat website">
+
+      <span class="favorite-image-number">
+        03
+      </span>
+
+    </div>
+
+
+    <div class="favorite-content">
+
+      <div class="favorite-meta">
+
+        <span class="favorite-line"></span>
+
+        <span>03</span>
+
+        <span>/</span>
+
+        <span>WEB DEVELOPMENT</span>
+
+      </div>
+
+
+      <p>
+        Belajar membuat website dari tampilan
+        sampai sistemnya menggunakan HTML,
+        CSS, JavaScript, PHP, dan MySQL.
+
+        Saya suka membuat sesuatu dari nol
+        dan melihat hasilnya bisa digunakan.
+      </p>
+
+
+      <div class="favorite-tags">
+
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="favorite-big-number">
+      03
+    </div>
+
+  </article>
+
+</div>
+  <!-- ================= ABOUT FOOTER ================= -->
+
+  <div class="about-bottom">
+
+    <span>
+      XII RPL 1
+    </span>
+
+    <span>
+      SMK Mandiri
+    </span>
+
+    <span>
+      Pencinta Alam · Gym · Web
+    </span>
+
+    <span>
+      M. Raja Siyo
+    </span>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =========================================================
+     PROJECT
+     ========================================================= -->
+
+<section
+  class="work"
+  id="project">
+
+
+  <h2 class="sec-title">
+    Project
+  </h2>
+
+
+  <div class="work-grid">
+
+
+    <article>
+
+      <h3>
+        Website portofolio ini
+      </h3>
+
+      <p>
+
+        Adegan gunung meletus yang digerakkan scroll,
+        lengkap dengan mode pagi dan malam.
+
+        HTML, CSS, dan JavaScript murni,
+        tanpa library.
+
+      </p>
+
+    </article>
+
+
+
+    <article>
+
+      <h3>
+        Interaksi dan animasi
+      </h3>
+
+      <p>
+
+        Fisika ayunan bet nama,
+        partikel bara api di canvas,
+        dan parallax sepuluh lapisan.
+
+      </p>
+
+    </article>
+
+
+
+    <article>
+
+      <h3>
+        Sisi server
+      </h3>
+
+      <p>
+
+        PHP dan MySQL untuk form,
+        login, dan data yang perlu disimpan.
+
+      </p>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<footer
+  class="contact"
+  id="contact">
+
+
+  <h2 class="big">
+
+    Mau ngobrol<br>
+    atau naik bareng?
+
+  </h2>
+
+
+  <ul class="links">
+
+
+    <li>
+
+      <a href="mailto:rajasiyo@email.com">
+        rajasiyo@email.com
+      </a>
+
+    </li>
+
+
+    <li>
+
+      <a
+        href="https://instagram.com/"
+        target="_blank"
+        rel="noopener">
+
+        Instagram
+
+      </a>
+
+    </li>
+
+
+    <li>
+
+      <a
+        href="https://github.com/"
+        target="_blank"
+        rel="noopener">
+
+        GitHub
+
+      </a>
+
+    </li>
+
+
+  </ul>
+
+
+
+  <p class="sign">
+
+    Dibuat sendiri pakai HTML,
+    CSS, dan JavaScript
+
+    &mdash; 2026
+
+  </p>
+
+
+</footer>
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
